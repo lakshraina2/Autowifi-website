@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connected! - AutoWifi</title>
+    <link rel="stylesheet" href="style-connected.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        
+        <div class="success-card">
+            <div class="success-circle">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h1>You are Online!</h1>
+            <p>AutoWifi has securely logged you in.</p>
+            
+            <a href="https://www.buymeacoffee.com/lakshraina2" target="_blank" class="coffee-btn">
+                <span>☕</span> Buy me a Coffee
+            </a>
+        </div>
+
+        <div class="daily-content">
+            <div class="info-card" style="border-left-color: #6366f1;">
+                <h4 style="color: #6366f1;"><i class="fa-solid fa-lightbulb"></i> Daily Tech Tip</h4>
+                <p id="dailyTip">Loading tip...</p>
+            </div>
+            
+            <div class="info-card" style="border-left-color: #f59e0b;">
+                <h4 style="color: #d97706;"><i class="fa-solid fa-newspaper"></i> Student News</h4>
+                <p id="dailyNews">Loading news...</p>
+            </div>
+        </div>
+
+        <div class="content-article">
+            <h3><i class="fa-solid fa-shield-halved"></i> Weekly Feature: Safety First</h3>
+            
+            <p class="intro">You are now connected to a public network. While AutoWifi handles the login, here is what you need to know about keeping your data safe on campus Wi-Fi.</p>
+            
+            <h4>Does Incognito Mode Protect Me?</h4>
+            <p>Many students think Incognito Mode hides their activity from the college admin. <strong>It does not.</strong> Incognito only stops your browser from saving history. The network admin can still see every site you visit unless you use HTTPS or a VPN.</p>
+
+            <h4>Why "HTTPS" Matters</h4>
+            <p>Always look for the "lock" icon 🔒 in your address bar. This means your data is encrypted between you and the website. If you see "Not Secure," do not enter passwords or credit card info.</p>
+
+            <div class="read-more-links">
+                <a href="tips.html">Read 10 More Wi-Fi Hacks &rarr;</a>
+                <a href="gadgets.html" style="color: #d97706;">See Trending Gadgets &rarr;</a>
+            </div>
+            
+            </div>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a> • <a href="privacy.html">Privacy Policy</a>
+        </div>
+
+    </div>
+
+    <script>
+        const techTips = ["Press 'Win + V' for clipboard history.", "Alt + Tab switches apps.", "Ctrl + Shift + T opens closed tabs."];
+        const studentNews = ["Hackathon Alert: Smart India Hackathon registrations open.", "Internship Season: Check LinkedIn for summer roles."];
+        const facts = ["The first computer bug was a real moth.", "Python is named after Monty Python."];
+        const day = new Date().getDay();
+        document.getElementById('dailyTip').innerText = techTips[day % techTips.length];
+        document.getElementById('dailyNews').innerText = studentNews[day % studentNews.length];
+    </script>
+
+</body>
+</html>
