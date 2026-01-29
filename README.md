@@ -30,6 +30,15 @@ The website serves as:
   - Gadget recommendations
 
 ---
+## Screenshots
+
+<img width="1920" height="1080" alt="Screenshot (30)" src="https://github.com/user-attachments/assets/f1239df4-b57a-4704-a0a2-cd1178f4cde4" />
+<img width="1920" height="1080" alt="Screenshot (31)" src="https://github.com/user-attachments/assets/11803269-96c9-46b6-b864-3f8d8495f9ed" />
+<img width="1920" height="1080" alt="Screenshot (32)" src="https://github.com/user-attachments/assets/70ef634a-37c4-4a07-957e-45d460661bd3" />
+<img width="1920" height="1080" alt="Screenshot (33)" src="https://github.com/user-attachments/assets/50b2f474-22c5-4c33-a2c0-09851f02ccf9" />
+<img width="1920" height="1080" alt="Screenshot (34)" src="https://github.com/user-attachments/assets/6d6afb32-f9f2-4215-a93d-912275e8bb8b" />
+<img width="1920" height="1080" alt="Screenshot (35)" src="https://github.com/user-attachments/assets/26ccc540-e6a3-49ba-be3b-0431221f5909" />
+
 
 ## 🧩 Pages Included
 
