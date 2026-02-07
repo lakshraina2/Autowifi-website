@@ -21,9 +21,10 @@
         <a href="#" class="logo"><i class="fa-solid fa-wifi"></i> AutoWifi</a>
         <div class="nav-links">
             <a href="#home">Home</a>
+            <a href="#app">The App</a>
             <a href="#features">Features</a>
+            <a href="#faq">FAQ</a>
             <a href="#blog">Blog</a>
-            <a href="#about">Dev</a>
         </div>
     </nav>
 
@@ -37,12 +38,78 @@
         </div>
     </header>
 
+    <section id="how-it-works" style="padding: 4rem 10%; background: rgba(255,255,255,0.4); backdrop-filter: blur(10px); margin-top: 50px;">
+        <h2 class="section-title hidden">How The Extension Works</h2>
+        <div style="max-width: 900px; margin: 0 auto; text-align: left;">
+            
+            <div class="hidden delay-1" style="margin-bottom: 3rem; display: flex; gap: 20px;">
+                <div style="font-size: 2rem; color: #6366f1; font-weight: bold;">01</div>
+                <div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Intelligent Detection</h3>
+                    <p style="color: #475569; line-height: 1.6;">AutoWifi runs silently in the background. It monitors network requests to detect when you are redirected to a captive portal (like Fortinet or Sophos gateways). It instantly recognizes the login page structure.</p>
+                </div>
+            </div>
+
+            <div class="hidden delay-2" style="margin-bottom: 3rem; display: flex; gap: 20px;">
+                <div style="font-size: 2rem; color: #6366f1; font-weight: bold;">02</div>
+                <div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Secure Injection</h3>
+                    <p style="color: #475569; line-height: 1.6;">Once detected, the extension retrieves your encrypted credentials from your device's local storage. We use the <code>chrome.storage.local</code> API, ensuring your password never leaves your browser.</p>
+                </div>
+            </div>
+
+            <div class="hidden delay-3" style="display: flex; gap: 20px;">
+                <div style="font-size: 2rem; color: #6366f1; font-weight: bold;">03</div>
+                <div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Keep-Alive Protocol</h3>
+                    <p style="color: #475569; line-height: 1.6;">To prevent your university network from disconnecting you due to "inactivity," AutoWifi sends periodic heartbeat packets. This ensures your large downloads or gaming sessions are never interrupted.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="app" style="background: linear-gradient(135deg, #eef2ff 0%, #ffffff 100%);">
+        <h2 class="section-title hidden">Your Campus in Your Pocket</h2>
+        <p style="text-align: center; max-width: 600px; margin: -40px auto 60px auto; color: #64748b;" class="hidden delay-1">
+            The AutoWifi Android App goes beyond just internet. It's a full utility belt for university students.
+        </p>
+
+        <div class="card-grid">
+            
+            <div class="card hidden delay-1" style="border-top: 5px solid #6366f1;">
+                <div class="card-icon"><i class="fa-solid fa-school"></i></div>
+                <h3>LMS Integration</h3>
+                <p>One-tap login to your University LMS. Access your dashboard, Download PPTs etc without typing a single CAPTCHA.</p>
+            </div>
+
+            <div class="card hidden delay-2" style="border-top: 5px solid #ec4899;">
+                <div class="card-icon"><i class="fa-solid fa-file-arrow-down"></i></div>
+                <h3>Smart Downloader</h3>
+                <p>Download PPTs, Assignments, and PDFs directly from the LMS. Includes a built-in file manager to keep your study materials organized.</p>
+            </div>
+
+            <div class="card hidden delay-3" style="border-top: 5px solid #10b981;">
+                <div class="card-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                <h3>Mobile Auto-Login</h3>
+                <p>Walking between classes? The app automatically detects Wi-Fi zones and logs you in instantly as soon as you connect.</p>
+            </div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 60px;" class="hidden delay-4">
+             <a href="https://play.google.com/store/apps/details?id=com.autowifistudios.loginapp&pcampaignid=web_share" class="btn btn-primary">
+                <i class="fa-brands fa-google-play"></i> Download for Android
+             </a>
+        </div>
+    </section>
+
     <section id="features">
         <h2 class="section-title hidden">Why Students Love It</h2>
         <div class="card-grid">
             <div class="card hidden delay-1">
                 <div class="card-icon"><i class="fa-solid fa-bolt"></i></div>
-                <h3>Instant Login</h3>
+                <h3>Zero Latency</h3>
                 <p>Detects the login page in milliseconds and signs you in before you can even blink.</p>
             </div>
             <div class="card hidden delay-2">
@@ -55,6 +122,33 @@
                 <h3>Always On</h3>
                 <p>Background scripts handle network keep-alive checks so your download never fails.</p>
             </div>
+        </div>
+    </section>
+
+    <section id="faq" style="background: rgba(255,255,255,0.4);">
+        <h2 class="section-title hidden">Frequently Asked Questions</h2>
+        <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));"> 
+            
+            <div class="card hidden delay-1" style="text-align: left;">
+                <h3 style="color: #6366f1; margin-bottom: 10px;">Is my password safe?</h3>
+                <p style="font-size: 0.95rem; color: #4b5563;">Absolutely. AutoWifi operates on a "Zero-Knowledge" architecture. Your username and password are stored locally on your specific device. We do not have servers, and we never transmit your credentials over the internet.</p>
+            </div>
+
+            <div class="card hidden delay-2" style="text-align: left;">
+                <h3 style="color: #6366f1; margin-bottom: 10px;">Does it work on all Wi-Fi?</h3>
+                <p style="font-size: 0.95rem; color: #4b5563;">AutoWifi is optimized for captive portals that use standard HTML forms (like 172.16.x.x gateways). It works best on University, Hotel, and Airport networks.</p>
+            </div>
+
+            <div class="card hidden delay-3" style="text-align: left;">
+                <h3 style="color: #6366f1; margin-bottom: 10px;">Why not use Chrome Autofill?</h3>
+                <p style="font-size: 0.95rem; color: #4b5563;">Chrome Autofill only fills the text boxes; it doesn't click "Login" for you. AutoWifi detects the page, fills the data, and submits the form instantly without you touching the keyboard.</p>
+            </div>
+
+            <div class="card hidden delay-4" style="text-align: left;">
+                <h3 style="color: #6366f1; margin-bottom: 10px;">Is it free?</h3>
+                <p style="font-size: 0.95rem; color: #4b5563;">Yes! The core features of AutoWifi are free for all students. We are supported by unobtrusive ads on our download pages. Our mission is to make campus internet accessible.</p>
+            </div>
+
         </div>
     </section>
 
@@ -90,6 +184,10 @@
 
     <footer style="text-align:center; padding:50px; opacity:0.6;">
         <p>&copy; 2026 AutoWifi Project. Built with ❤️ by Lakshay.</p>
+        <p style="font-size: 0.9rem; margin-top: 10px;">
+            <a href="privacy.html" style="color: inherit; text-decoration: none; font-weight: bold;">Privacy Policy</a> • 
+            <a href="https://chromewebstore.google.com/detail/lkpoonbolbfkflcngpkiladignilnadc" style="color: inherit; text-decoration: none;">Chrome Store</a>
+        </p>
     </footer>
 
     <script>
