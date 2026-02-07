@@ -28,12 +28,12 @@
         <div class="daily-content">
             <div class="info-card" style="border-left-color: #6366f1;">
                 <h4 style="color: #6366f1;"><i class="fa-solid fa-lightbulb"></i> Daily Tech Tip</h4>
-                <p id="dailyTip">Loading tip...</p>
+                <p id="dailyTip">Press 'Win + V' to open your clipboard history and paste items you copied earlier.</p>
             </div>
             
             <div class="info-card" style="border-left-color: #f59e0b;">
                 <h4 style="color: #d97706;"><i class="fa-solid fa-newspaper"></i> Student News</h4>
-                <p id="dailyNews">Loading news...</p>
+                <p id="dailyNews">Hackathon Alert: Smart India Hackathon registrations are opening soon. Check the portal.</p>
             </div>
         </div>
 
@@ -66,8 +66,12 @@
         const studentNews = ["Hackathon Alert: Smart India Hackathon registrations open.", "Internship Season: Check LinkedIn for summer roles."];
         const facts = ["The first computer bug was a real moth.", "Python is named after Monty Python."];
         const day = new Date().getDay();
-        document.getElementById('dailyTip').innerText = techTips[day % techTips.length];
-        document.getElementById('dailyNews').innerText = studentNews[day % studentNews.length];
+        
+        // This JS still runs for real users to rotate the content
+        if(document.getElementById('dailyTip')) {
+             document.getElementById('dailyTip').innerText = techTips[day % techTips.length];
+             document.getElementById('dailyNews').innerText = studentNews[day % studentNews.length];
+        }
     </script>
 
 </body>
